@@ -3,26 +3,26 @@
 
 -anime_info_df.columns.tolist()
 
-# ['anime_id',
-#  'Genres',
-#  'is_tv',
-#  'year_aired',
-#  'is_adult',
-#  'above_five_star_users',
-#  'above_five_star_ratings',
-#  'above_five_star_ratio']
+['anime_id',
+'Genres',
+'is_tv',
+'year_aired',
+'is_adult',
+'above_five_star_users',
+'above_five_star_ratings',
+'above_five_star_ratio']
 
 -user_info.columns.tolist()
 
-# ['user_id',
-#  'review_count',
-#  'avg_score',
-#  'score_stddev',
-#  'above_five_star_count',
-#  'above_five_star_ratio']
+['user_id',
+'review_count',
+'avg_score',
+'score_stddev',
+ 'above_five_star_count',
+'above_five_star_ratio']
 
 -relevance_scores.columns.tolist()
-#['anime_id', 'anime_name', 'user_id', 'relevance_score']
+['anime_id', 'anime_name', 'user_id', 'relevance_score']
 
 
 2. Data preprocessing
