@@ -45,7 +45,7 @@
        'ANIME_FEATURE SCI-FI', 'ANIME_FEATURE MUSIC', 'ANIME_FEATURE SHOUNEN',
        'ANIME_FEATURE SLICE OF LIFE', 'ANIME_FEATURE SUPERNATURAL']
 
-   3. Training
+3. Training
       
       Training data voulme is 4678575, and test data volume is 200000. Features are input. relevance_score are target.
       
@@ -60,7 +60,7 @@ model.fit(xtrain,ytrain,group=train_groups,eval_set=[(xtest,ytest)],eval_group=[
    
    Plug in model to predict relevance (ranking) score of candidates.
 
-6. Evaluation
+5. Evaluation
    
    import shap to evaluate model performance.
    
