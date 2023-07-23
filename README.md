@@ -26,8 +26,11 @@
 
 
 2. Data preprocessing
+   
    Fill in null values.
+   
    Merging all features (both anime features and user features) into one df for model training purposes.
+   
    get train dataframe:
    ['anime_id', 'Name', 'user_id', 'relavence_score',
    'USER_FEATURE REVIEW_COUNT', 'USER_FEATURE AVG_SCORE',
@@ -43,15 +46,22 @@
        'ANIME_FEATURE SLICE OF LIFE', 'ANIME_FEATURE SUPERNATURAL']
 
    3. Training
+      
       Training data voulme is 4678575, and test data volume is 200000. Features are input. relevance_score are target.
+      
       model = lgb.LGBMRanker(objective="lambdarank")
 model.fit(xtrain,ytrain,group=train_groups,eval_set=[(xtest,ytest)],eval_group=[test_groups],eval_metric=['ndcg'])
 
 4. Prediction
+   
    Choose user_id=1.
+   
    use candidates that have not been liked by this user as model input.
+   
    Plug in model to predict relevance (ranking) score of candidates.
 
-5. Evaluation
+6. Evaluation
+   
    import shap to evaluate model performance.
+   
    Plot summary of how each candidate contribute to the output.
